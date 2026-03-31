@@ -1,12 +1,12 @@
 # Jawaban Pertanyaan Praktikum Modul 1 - Percabangan
 
-1. Pada kondisi apa program masuk ke blok `if` ?
+**1. Pada kondisi apa program masuk ke blok `if` ?**
 ```cpp
 if (timeDelay <= 100>) {
 ```
 ketika variabel `timedelay` memenuhi syarat (nilainya sama dengan atau kurang dari seratus).
 
-2. Pada kondisi apa program masuk ke blok `else`?
+**2. Pada kondisi apa program masuk ke blok `else`?**
 ```cpp
 } else {
     timeDelay -= 100;
@@ -14,13 +14,13 @@ ketika variabel `timedelay` memenuhi syarat (nilainya sama dengan atau kurang da
 ```
 saat variabel `timeDelay` tidak lagi memenuhi syarat yang diberlakukan pada `if` sebelumnya.
 
-3. Apa fungsi dari perintah `delay(timeDelay)`?
+**3. Apa fungsi dari perintah `delay(timeDelay)`?**
 ```cpp
 delay(timeDelay)
 ```
 fungsi `delay` akan melakukan penundaan (delay) sebanyak waktu sesuai dengan parameter yang dimasukkan pada fungsi tersebut.
 
-4. Jika program yang dibuat memiliki alur mati → lambat → cepat → reset (mati), ubah menjadi LED tidak langsung reset → tetapi berubah dari cepat → sedang → mati
+**4. Jika program yang dibuat memiliki alur mati → lambat → cepat → reset (mati), ubah menjadi LED tidak langsung reset → tetapi berubah dari cepat → sedang → mati**
 ```cpp
 const int ledPin = 4;
 int timeDelay = 1000;
