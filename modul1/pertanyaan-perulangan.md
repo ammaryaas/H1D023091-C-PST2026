@@ -13,7 +13,7 @@ for (int ledPin = 6; ledPin >= 2; ledPin--) {
     digitalWrite(ledPin, LOW);
 }
 ```
-Perulangan `for` ini menginisiasi variabel `ledPin` menjadi bervalue `7` lalu melakukan "blink" yang diulang dengan value dari `ledPin` yang dinamis. Auto decrement dari `ledPin--` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 6,5,4, 3, sampai dengan 2.
+Perulangan `for` ini menginisiasi variabel `ledPin` menjadi bervalue `7` lalu melakukan *blink* yang diulang dengan value dari `ledPin` yang dinamis. *Auto decrement* dari `ledPin--` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 6,5,4, 3, sampai dengan 2.
 
 **3. Jelaskan bagaimana program membuat LED kembali dari kanan ke kiri!**
 ```cpp
@@ -25,7 +25,7 @@ for (int ledPin = 2; ledPin < 7; ledPin++) {
     digitalWrite(ledPin, LOW);
     }
 ```
-Perulangan `for` di sini menginisiasi variabel `ledPin` menjadi bervalue `2` lalu melakukan "blink" yang diulang dengan value dari `ledPin` yang dinamis. Auto increment dari `ledPin++` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 2,3,4,5 sampai dengan 6.
+Perulangan `for` di sini menginisiasi variabel `ledPin` menjadi bervalue `2` lalu melakukan *blink* yang diulang dengan value dari `ledPin` yang dinamis. *Auto increment* dari `ledPin++` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 2,3,4,5 sampai dengan 6.
 
 **4. Buatkan program agar LED menyala tiga LED kanan dan tiga LED kiri secara bergantian**
 ```cpp
