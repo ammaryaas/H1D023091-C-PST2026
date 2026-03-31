@@ -1,9 +1,9 @@
 # Jawaban Pertanyaan Praktikum Modul 1 - Percabangan
 
-1. Gambarkan rangkaian schematic dari 5 LED running yang digunakan pada percobaan
+**1. Gambarkan rangkaian schematic dari 5 LED running yang digunakan pada percobaan**
 <img width="512" height="395" alt="schematic view" src="https://github.com/user-attachments/assets/5094a040-9158-4339-9714-26bf278d0d86" />
 
-2. Jelaskan bagaimana program membuat efek LED berjalan dari kiri ke kanan!
+**2. Jelaskan bagaimana program membuat efek LED berjalan dari kiri ke kanan!**
 ```cpp
 for (int ledPin = 6; ledPin >= 2; ledPin--) {
     // menghidupkan pin:
@@ -15,7 +15,7 @@ for (int ledPin = 6; ledPin >= 2; ledPin--) {
 ```
 Perulangan `for` ini menginisiasi variabel `ledPin` menjadi bervalue `7` lalu melakukan "blink" yang diulang dengan value dari `ledPin` yang dinamis. Auto decrement dari `ledPin--` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 6,5,4, 3, sampai dengan 2.
 
-3. Jelaskan bagaimana program membuat LED kembali dari kanan ke kiri!
+**3. Jelaskan bagaimana program membuat LED kembali dari kanan ke kiri!**
 ```cpp
 for (int ledPin = 2; ledPin < 7; ledPin++) {
     // hidupkan LED pin nya:
@@ -27,7 +27,7 @@ for (int ledPin = 2; ledPin < 7; ledPin++) {
 ```
 Perulangan `for` di sini menginisiasi variabel `ledPin` menjadi bervalue `2` lalu melakukan "blink" yang diulang dengan value dari `ledPin` yang dinamis. Auto increment dari `ledPin++` membuat setiap lampu mengalami hal yang sama—blink, mulai dari 2,3,4,5 sampai dengan 6.
 
-4. Buatkan program agar LED menyala tiga LED kanan dan tiga LED kiri secara bergantian
+**4. Buatkan program agar LED menyala tiga LED kanan dan tiga LED kiri secara bergantian**
 ```cpp
 int timer = 300;
 
