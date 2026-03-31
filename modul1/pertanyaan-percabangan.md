@@ -15,7 +15,7 @@ ketika variabel `timedelay` memenuhi syarat (nilainya sama dengan atau kurang da
 saat variabel `timeDelay` tidak lagi memenuhi syarat yang diberlakukan pada `if` sebelumnya.
 
 3. Apa fungsi dari perintah `delay(timeDelay)`?
-```c
+```cpp
 delay(timeDelay)
 ```
 fungsi `delay` akan melakukan penundaan (delay) sebanyak waktu sesuai dengan parameter yang dimasukkan pada fungsi tersebut.

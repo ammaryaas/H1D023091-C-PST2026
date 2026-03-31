@@ -1,9 +1,8 @@
 # Jawaban Pertanyaan Praktikum Modul 1 - Percabangan
 
 1. Gambarkan rangkaian schematic dari 5 LED running yang digunakan pada percobaan
-```
 ![Schematic View](schematic view.png)
-```
+
 2. Jelaskan bagaimana program membuat efek LED berjalan dari kiri ke kanan!
 ```c
 for (int ledPin = 6; ledPin >= 2; ledPin--) {
