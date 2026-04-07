@@ -1,16 +1,20 @@
 # Jawaban Pertanyaan Praktikum Modul 2 - Input
 
 **1. Gambarkan rangkaian schematic yang digunakan pada percobaan!**
+<img width="506" height="392" alt="schematic input" src="https://github.com/user-attachments/assets/15ceddff-5f15-44d2-8818-7eb92984b3b9" />
+
 **2. Mengapa pada *push button* digunakan mode `INPUT_PULLUP` pada Arduino Uno? Apa keuntungannya dibandingkan rangkaian biasa?**
 ```cpp
 pinMode(btnUp, INPUT_PULLUP);
 ```
 Mode `INPUT_PULLUP` digunakan pada Arduino untuk mengaktifkan resistor *pull-up* internal, memastikan pin input bernilai `HIGH` (logika 1) saat tombol tidak ditekan, dan `LOW` (logika 0) saat ditekan. Ini menghilangkan kebutuhan komponen eksternal (resistor), menyederhanakan rangkaian, menghemat ruang di *breadboard*, serta mencegah sinyal *floating* yang tidak stabil.
+
 **3. Jika salah satu LED segmen tidak menyala, apa saja kemungkinan penyebabnya dari sisi hardware maupun software?**
 - kesalahan konfigurasi pin
 - pin belum terinisialisasi
-- akses LED yang belum dikonfigurasi
+- kode mengakses LED yang belum dikonfigurasi
 - komponen rusak
+
 **4. Modifikasi rangkaian dan program dengan dua push button yang berfungsi sebagai penambahan (increment) dan pengurangan (decrement) pada sistem counter**
 ```c
 #include <Arduino.h>
