@@ -1,6 +1,8 @@
 # Jawaban Pertanyaan Praktikum Modul 2 - Output
 
 **1. Gambarkan rangkaian schematic yang digunakan pada percobaan!**
+<img width="506" height="398" alt="schematic output" src="https://github.com/user-attachments/assets/4f96518c-708e-496a-a7d8-b2206658f9b2" />
+
 **2. Apa yang terjadi jika nilai `num` lebih dari 15?**
 ```cpp
 for (int i = 0; i < 16; i++)
@@ -20,8 +22,11 @@ void displayDigit(int num)
 }
 ```
 yang mana nilai `num` ini merujuk pada array dua dimensi `digitPattern` yang berisi *byte hexadecimal* untuk keluaran yang akan tampil pada *7 segments display*. Lalu apa yang akan terjadi ketika nilai `num` lebih dari 15? Ia akan mengakses *array* yang tidak ada (tidak didefinisikan pada `digitPattern`) sehingga *7 segments* akan menampilkan keluaran acak yang tidak beraturan.
+
 **3. Apakah program ini menggunakan *common cathode* atau *common anode*? Jelaskan alasanya!** 
+
 Program ini menggunakan *common cathode* karena penghubungnya menggunakan GND sebagai pin bersama yang nantinya akan terhubung juga memiliki logika nyala yang bernilai 1 atau HIGH.
+
 **4. Modifikasi program agar tampilan berjalan dari F ke 0**
 ```c
 const int segmentPins[8] = {7, 6, 5, 11, 10, 8, 9, 4};
