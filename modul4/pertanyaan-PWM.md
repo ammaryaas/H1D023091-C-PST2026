@@ -4,7 +4,7 @@
 
 **2. Apa hubungan antara nilai ADC (0–1023) dan nilai PWM (0–255)?**
 
-Masing-masing nilai tersebut adalah representasi dari masing-masing *power* yang dapat dikeluarkan. Hubungan antara nilai ADC (0–1023) dan PWM (0–255) adalah hubungan linier skala, di mana nilai ADC 10-bit (\$2^10\$=1024 level) dikonversi menjadi nilai PWM 8-bit (\$2^8\$=256 level) dengan cara membaginya dengan empat (ADC : 4 = PWM). Hal ini sering digunakan untuk mengatur intensitas (LED/Motor) berdasarkan *input* sensor.
+Masing-masing nilai tersebut adalah representasi dari masing-masing *power* yang dapat dikeluarkan. Hubungan antara nilai ADC (0–1023) dan PWM (0–255) adalah hubungan linier skala, di mana nilai ADC 10-bit (\$2^{10}\$=1024 level) dikonversi menjadi nilai PWM 8-bit (\$2^8\$=256 level) dengan cara membaginya dengan empat (ADC : 4 = PWM). Hal ini sering digunakan untuk mengatur intensitas (LED/Motor) berdasarkan *input* sensor.
 
 **3. Modifikasilah program berikut agar LED hanya menyala pada rentang kecerahan sedang, yaitu hanya ketika nilai PWM berada pada rentang 50 sampai 200.**
 
