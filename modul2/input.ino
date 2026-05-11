@@ -21,6 +21,7 @@ byte digitPattern[16][8] = {
     {1,0,0,1,1,1,1,0}, // E
     {1,0,0,0,1,1,1,0}  // F
 };
+
 int currentDigit = 0;
 bool lastUpState = HIGH;
 
